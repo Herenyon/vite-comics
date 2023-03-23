@@ -9,19 +9,19 @@ export default {
 
 <template>
     <div>
-        <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+        <img src="../assets/img/buy-comics-digital-comics.png" alt="smartphone">
         <span> DIGITAL COMICS</span>
     </div>
     <div>
-        <img src="../assets/img/buy-comics-merchandise.png" alt="">
+        <img src="../assets/img/buy-comics-merchandise.png" alt="maglietta">
         <span> DC MERCHANDISE</span>
     </div>
     <div>
-        <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+        <img src="../assets/img/buy-comics-shop-locator.png" alt="pinna">
         <span> SUBSCRIPTION</span>
     </div>
     <div>
-        <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+        <img src="../assets/img/buy-comics-subscriptions.png" alt="card">
         <span> COMIC SHOP LOCATOR</span>
     </div>
     <div>
@@ -58,7 +58,7 @@ div {
 
     svg {
         width: 35%;
-        height: 0 auto;
+        height: 35%;
     }
 
     .st0 {

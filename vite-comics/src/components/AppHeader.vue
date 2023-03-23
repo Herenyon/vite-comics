@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss">
 .container-header {
-  background-color: aqua;
+
   display: flex;
   padding: 1.125rem 18.75rem;
   justify-content: space-between;

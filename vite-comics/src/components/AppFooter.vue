@@ -1,11 +1,13 @@
 <script>
 import AppSezioneAzzurraFooter from './AppSezioneAzzurraFooter.vue';
 import SezioneLinkFooter from './SezioneLinkFooter.vue';
+import SezioneSocialFooter from './SezioneSocialFooter.vue'
 export default {
     name: 'AppFooter',
     components: {
         AppSezioneAzzurraFooter,
-        SezioneLinkFooter
+        SezioneLinkFooter,
+        SezioneSocialFooter
     }
 }
 
@@ -22,7 +24,9 @@ export default {
         <div class="container-link">
             <SezioneLinkFooter />
         </div>
-        <div>parte contatti</div>
+        <div class="container-social">
+            <SezioneSocialFooter />
+        </div>
     </div>
 </template>
 
@@ -37,7 +41,7 @@ export default {
         display: flex;
         align-content: center;
         justify-content: space-around;
-        height: 0 auto;
+
     }
 
     .container-link {
@@ -46,6 +50,14 @@ export default {
         background-repeat: no-repeat;
         background-size: 30%, 100%;
         background-position: 80%;
+    }
+
+    .container-social {
+        padding: 1.125rem 18.75rem;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        background-color: variables.$backgound-color-footer;
     }
 }
 </style>

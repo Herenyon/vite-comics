@@ -68,6 +68,10 @@ export default {
     a {
         text-decoration: none;
         color: variables.$tertiary-color-text;
+
+        &:hover {
+            border-bottom: 1px solid variables.$tertiary-color-text;
+        }
     }
 
     ul {
@@ -78,6 +82,8 @@ export default {
 
         li {
             margin-bottom: .3125rem;
+
+
         }
     }
 
