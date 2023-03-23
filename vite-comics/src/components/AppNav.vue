@@ -31,20 +31,27 @@ ul {
     li {
         padding: 10px;
 
+
         a {
             color: variables.$primary-color-text;
             text-decoration: none;
             font-size: 0.95rem;
             font-weight: bold;
+            padding-bottom: 15px;
 
-            &:hover {
+
+
+        }
+
+        &:hover {
+            border-bottom: 5px solid variables.$secondary-color-text;
+
+            a {
                 color: variables.$secondary-color-text;
             }
         }
 
-        &:hover {
-            border-bottom: 4px solid variables.$secondary-color-text;
-        }
+
 
     }
 
