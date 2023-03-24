@@ -1,24 +1,47 @@
 <script>
+import Cards from './Cards.vue';
+// import 
 export default {
-    name: 'AppMain'
+    name: 'AppMain',
+    components: {
+        Cards
+    },
+    props: {
+        img: String,
+        title: String
+    }
 }
 
 
 </script>
 
 <template>
-    <div class="container-main">
-        <h1>
-            Content goes here
-        </h1>
-    </div>
+    <section class="container-comic">
+
+    </section>
+    <section class="container-cards">
+        <Cards />
+    </section>
 </template>
 
 <style lang="scss">
-.container-main {
-    background-color: #1c1c1c;
+.container-comic {
+
+
+    background-image: url(../assets/img/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+    padding: 1.125rem 18.75rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.container-cards {
     color: white;
-    height: 200px;
+    background-color: #1c1c1c;
     padding: 1.125rem 18.75rem;
     display: flex;
     align-items: center;
