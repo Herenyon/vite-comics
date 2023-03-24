@@ -92,9 +92,9 @@ export default {
 
 <template>
     <section>
-        <h2>CURRENT SERIES</h2>
+        <h3>CURRENT SERIES</h3>
         <div>
-            <div class="container-cards-ses">
+            <div class="container-card">
 
                 <CardElement v-for="card in cards" :img="card.thumb" :title="card.series" />
             </div>
@@ -103,10 +103,28 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-.container-cards-ses {
+@use '../styles/variables.scss' as *;
+
+section {
+    position: relative;
+}
+
+.container-card {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    width: 100%;
+
+
+
+
+}
+
+h3 {
+    top: -35px;
+    position: absolute;
+    padding: .5rem .9375rem;
+    background-color: $secondary-color-text;
 }
 </style>
 
